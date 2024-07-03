@@ -1,0 +1,39 @@
+name: Backend Component
+description: Manage a backend component for the project
+title: "[feat] First file"
+labels: ["backend"]
+assignees:
+  - AdamsGeeky
+body:
+  - type: textarea
+    attributes:
+      label: Component Description
+      description: Describe the purpose and functionality of the backend component.
+      placeholder: Explain what this component is responsible for.
+      value: |
+        Add a `POST /files` endpoint to create a new file.
+  - type: textarea
+    attributes:
+      label: API Routes
+      description: Describe API routes together with purpose and functionality
+      value: |
+        - Retrieve user based on the token.
+        - Save the file metadata to the `files` collection.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Data Flow
+      description: Describe data flow together with purpose and functionality
+      value: |
+        - Data is received from clients via API requests.
+        - The component processes the data and interacts with the database.
+        - Processed data is returned to clients as API responses.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the feature request here.
+    validations:
+      required: false
